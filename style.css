@@ -1,0 +1,334 @@
+:root{
+   --color-primario: #0A3871;
+   --color-secundario: #F3F5FC;
+   --color-terciario: white;
+   --color-textgray4: #495057;
+   --color-textgray5: #343A40;
+   --color-hover:#a3ffbf;
+}
+/* -ESTILOS GENERALES- */
+*{
+   box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+}
+header{
+   padding: 2% 2% 2% 4%;
+   width: 100%;   
+}
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background-color: var(--color-secundario);
+}
+footer{
+   width: 100%;
+   padding: 20px;
+   background-color: black;
+   color: white;
+   font-size: 1rem;
+   text-align: center;
+}
+/* -ESTILOS DEL HEADER-*/
+.header-titulo{
+   display: flex;
+   height: auto;
+   align-items: center;
+   gap: 12px
+}
+.logo-a{
+   height: 100%;
+   max-height: 2.8rem;
+   min-height: 2.2rem;
+}
+.titulo{
+   color: var(--color-primario);
+   font-weight: 800;
+   font-size: 2.2rem;
+}
+/* -ESTILOS DE CONTENEDORES-*/
+.container{
+   display: flex;
+   flex-grow: 1;
+   justify-content: space-between;
+   width: 90%;
+   margin: auto 2% 1% 2%;
+   padding: 1rem;
+}
+.contanier-section-input{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 68%;
+   padding: 12px;
+   gap: 20px;  
+}
+.container-section-output{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 32%;
+   padding: 12px;
+   align-items: center;
+   border-radius: 32px;
+   background-color: var(--color-terciario);
+   box-shadow: 0px 0px 16px 12px #CED4DA;
+   gap: 20px;
+}
+/* -ESTILOS DEL INGRESO DE DATOS- */
+.text-input{
+   width: 100%;
+   height: 80%;
+   padding: 2%;
+   border: none;
+   background-color: transparent;
+   color: var(--color-primario);
+   text-transform: lowercase;
+   font-size: 2rem;
+}
+.text-input::placeholder { 
+   color: var(--color-primario);
+}
+.text-input:focus{
+   outline: none;
+}
+.information{
+   display: flex;
+   padding: 0 0 0 2%;
+   gap: 4px;
+}
+.icon-info{
+   height: 100%;
+   max-height: 16px;
+   min-height: 8px;
+}
+.text-info{
+   font-weight: 480;
+   font-size: 1.2rem;
+   color: var(--color-textgray4);
+}
+/* - ESTILOS DE LOS BOTONES ENCRIPTAR Y DESENCRIPTAR- */
+.buttons-input{
+   display: flex;
+   justify-content: space-between;
+   padding: 0 12% 0 2%;
+   gap: 4%;
+}
+.button-encrypt{
+   width: 50%;
+   height: 67px;
+   background-color: var(--color-primario);
+   border: 1px solid var(--color-primario);
+   border-radius:24px;
+   font-size: 1.5rem;
+   color: var(--color-terciario);
+   cursor: pointer;
+}
+.button-encrypt:hover{
+   background-color: var(--color-hover);
+   border: 1px solid var(--color-primario);
+   color: var(--color-primario);
+}
+.button-decrypt{
+   width: 50%;
+   height: 67px;
+   background:var(--color-secundario);
+   border: 1px solid var(--color-primario);
+   border-radius:24px;
+   font-size: 1.5rem;
+   color: var(--color-primario);
+   cursor: pointer;
+}
+.button-decrypt:hover{
+   background-color: var(--color-textgray4);
+   border: 1px solid  var(--color-secundario);
+   color: var(--color-terciario);
+}
+/* -ESTILOS DE LA SALIDA DE DATOS- */
+.content-output{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 8%;
+   width: 100%;
+   height: 90%; 
+}
+.content-output__center{
+   justify-content: center;
+}
+.img-muneco{
+   width: 68%;
+}
+.ocultar{
+   display: none;
+}
+.text-output{
+   width: 100%;
+   border: none;
+   background: transparent;
+   font-size: 2rem;
+   color: var(--color-primario);
+   resize: none;
+}
+.text-output::placeholder{
+   color: var(--color-textgray5);
+   text-align: center;
+   font-weight: 700;
+   font-size: 1.8rem;
+}
+.text-output:focus{
+   outline: none;
+}
+.textOutput__End{
+   height: 100%;
+}
+.text-guia{
+   color: var(--color-textgray4);
+   text-align: center;
+   font-weight: 600;
+   font-size: 1.2rem;
+}
+/* -ESTILOS DEL BOTON COPIAR- */
+.button-output{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+.button-copy{
+   width: 90%;
+   height: 67px;
+   background:var(--color-secundario);
+   border: 1px solid var(--color-primario);
+   border-radius: 24px;
+   font-size: var(--color-primario);
+   font-size: 1.5rem;
+   color: var(--color-primario);
+   cursor: pointer;
+}
+.button-copy:hover{
+   background-color: var(--color-textgray4);
+   border: 1px solid  var(--color-secundario);
+   color: var(--color-terciario);
+}
+.button-copy__ocultar{
+   display: none;
+}
+/* -ESTILOS DEL FOOTER- */
+.footer-copyright{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1rem;
+   gap: 1rem;
+}
+.footer-icons{
+   display: flex;
+   gap: 1rem;
+}
+.icon{
+   max-height: 20px;
+}
+/* -ESTILOS RESPONSIVE- */
+@media (max-width:1200px){
+   .container{
+      flex-direction: column;
+      align-items: center;
+      padding: 2.4%;
+      height: auto;
+      gap: 20px;
+   }
+   .contanier-section-input{
+      width: 100%;
+      height: auto;
+      min-height: 60vh;
+   }
+   .container-section-output{
+      width: 100%;
+      min-height: 20vh;
+   }
+   .text-input{
+      width: 100%;
+   }
+   .buttons-input{
+      padding: 0 2% 0 2%;
+   }
+   .content-output{
+      height: auto;
+      gap: 12px;
+   }
+   .text-output{    
+      font-size: 1.8rem;
+   }
+   .textOutput__End{
+      height: auto;
+      min-height: 20vh;
+    }
+   .img-muneco{
+      display: none;
+   }
+   .button-output{
+      width: 100%;
+   }
+}
+@media (max-width: 440px){
+   header{
+      padding: 4% 0% 0% 4%;
+      width: 100%;   
+   }
+   .header-titulo{
+      width: 100%;
+      gap: 4px;
+   }
+   .titulo{
+      font-size: 1.2rem;
+   }
+   .container{
+      padding: 16px;
+      gap: 16px;
+   }
+   .contanier-section-input{
+      min-height: 68vh;
+   }
+   .container-section-output{
+      min-height: 24vh;
+      padding: 8px;
+   }
+   .text-input{
+      font-size: 1.2rem;
+   }
+   .text-info{
+      font-size: 0.8rem;
+   }
+   .buttons-input{
+      flex-direction: column;
+      gap: 16px;
+   }
+   .button-encrypt,
+   .button-decrypt
+   {
+      width: 100%;
+   }
+   .text-output{    
+      min-height: 60px;
+      font-size: 1.2rem;
+   }
+   .text-output::placeholder{
+      font-size: 1.2rem;
+   }
+   .text-guia{
+      font-size: 1rem;
+   }
+   .textOutput__End{
+      height: auto;
+      min-height: 24vh;
+    }
+    .footer-copyright{
+      flex-direction: column;
+   }
+}
