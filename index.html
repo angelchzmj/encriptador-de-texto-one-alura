@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-titulo">
+            <a href="https://www.aluracursos.com/" target="_blank">
+                <img class="logo-a" src="img/logo a.png" alt="logo alura">
+            </a>
+            <h1 class="titulo">ENCRIPTADOR DE TEXTOS</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section class="contanier-section-input">
+            <textarea class="text-input" placeholder="Ingrese el texto aqui" autofocus></textarea>
+            <div class="information">
+                <img class="icon-info" src="img/bi_exclamation-circle-fill.png" alt="icon informativo">
+                <h6 class="text-info">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="buttons-input">
+                <button class="button-encrypt" onclick="buttonencrypt()">Encriptar</button>
+                <button class="button-decrypt" onclick="buttondecrypt()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="container-section-output">
+            <div id= "contentOutput" class="content-output content-output__center">
+                <img id="imgMuneco" class="img-muneco" src="img/muneco.png" alt="personaje alura">
+                <textarea id="textOutput" class="text-output " placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+                <h4 id="textGuia" class="text-guia"> Ingrese el texto que desea encriptar o desencriptar</h4>
+            </div>
+            <div class="button-output">
+                <button id="buttonCopy" class="button-copy button-copy__ocultar" onclick="buttoncopy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-copyright">
+            <h4 class="text-copyright">Desarrollado por Angel Chavez</h4>
+            <div class="footer-icons">
+                <a href="https://app.aluracursos.com/user/angel-chz" target="_blank">
+                    <img class="icon" src="img/Alura.png" alt="icon alura">
+                </a>
+                <a href="https://github.com/angelchzmj?tab=repositories" target="_blank">
+                    <img class="icon" src="img/GitHub.jpg" alt="icon GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/angelchavezmejia/" target="_blank">
+                    <img class="icon" src="img/linkedin.jpg" alt="icon linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
