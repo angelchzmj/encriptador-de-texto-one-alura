@@ -7,11 +7,8 @@ const contentOutput = document.getElementById("contentOutput");
 const textOutput = document.getElementById("textOutput");
 
 // -VALIDADCION DE DATOS- //
-textinput.addEventListener("keypress", function (e) {
-    const regex = /^[a-zA-Z0-9\s]$/;
-    if (!regex.test(e.key)){
-        e.preventDefault();
-    }
+textinput.addEventListener("input", function (e) {
+    e.target.value = e.target.value.replace(/[^a-zA-Z0-9\s]/g, '');
 });
 
 // -BOTON ENCRIPTADOR- //
