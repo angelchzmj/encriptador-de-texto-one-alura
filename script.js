@@ -45,7 +45,7 @@ function buttoncopy(){
 function encrypt(stringencrypted){
     let llavesencrypt = [
         ["e", "enter"],
-        ["i", "ines"],
+        ["i", "imes"],
         ['a', 'ai'],
         ['o', 'ober'],
         ['u', 'ufat'],
@@ -62,7 +62,7 @@ function encrypt(stringencrypted){
 function decrypt(stringdecrypted){
     let llavesencrypt = [
         ["e", "enter"],
-        ["i", "ines"],
+        ["i", "imes"],
         ['a', 'ai'],
         ['o', 'ober'],
         ['u', 'ufat'],
